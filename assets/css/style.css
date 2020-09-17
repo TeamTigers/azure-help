@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #040404;
+}
+
+p,
+span {
+  color: #3e4444;
+}
+
+header nav {
+  background: white;
+  padding: 0 1rem;
+}
+header nav a {
+  color: #040404;
+}
+header nav .brand-logo {
+  color: #c36403;
+}
+header nav ul li a {
+  text-decoration: none;
+  position: relative;
+  margin-right: 10px;
+}
+header nav ul li a::after {
+  width: 0;
+  border-bottom: 3px solid #c36403;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  transition: all 0.2s;
+  content: "";
+}
+header nav ul li a:hover::after {
+  width: 100%;
+  background: white !important;
+}
+
+.banner-text {
+  margin-top: 5rem;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.card-rounded {
+  border-radius: 10px;
+}
+
+.flat_btn {
+  box-shadow: none;
+}
+.flat_btn:hover {
+  box-shadow: none;
+}
+
+.btn,
+.btn-flat {
+  text-transform: none;
+}
+
+.btn-flat {
+  padding: 0;
+}
+
+.banner-btn {
+  background-color: #c36403 !important;
+  color: white !important;
+}
+
+.card-panel .avatar {
+  width: 100px;
+  height: auto;
+}
+.card-panel h5 {
+  margin: 0;
+}
+
+.card {
+  box-shadow: none;
+}
+.card:hover {
+  -webkit-box-shadow: -1px 3px 10px -1px #c5c5c5;
+  -moz-box-shadow: -1px 3px 10px -1px #c5c5c5;
+  box-shadow: 1px 3px 10px -1px #c5c5c5;
+}
+.card:hover h5 {
+  color: #c36403;
+}
+.card .card-img {
+  width: 150px;
+  height: auto;
+}
+
+.auth-card {
+  border: 1px solid #d8d8d8;
+}
+
+.input-field input:focus + label {
+  color: #c36403 !important;
+}
+
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid #c36403 !important;
+  box-shadow: 0 1px 0 0 #c36403 !important;
+}
+
+.input-field textarea:focus + label {
+  color: #c36403 !important;
+}
+
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #c36403 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-logo {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

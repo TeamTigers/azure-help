@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+$orange: #c36403;
+$deep_black: #040404;
+$light_black: #3e4444;
+$white: rgb(255, 255, 255);
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: $deep_black;
+}
+
+p,
+span {
+  color: $light_black;
+}
+
+// .bg {
+//   background: url(../img/bg.svg);
+//   height: 60vh;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+header {
+  nav {
+    background: $white;
+    padding: 0 1rem;
+
+    a {
+      color: $deep_black;
+    }
+    .brand-logo {
+      color: $orange;
+    }
+    ul {
+      li {
+        a {
+          text-decoration: none;
+          position: relative;
+          margin-right: 10px;
+
+          &::after {
+            width: 0;
+            border-bottom: 3px solid $orange;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            transition: all 0.2s;
+            content: "";
+          }
+          &:hover::after {
+            width: 100%;
+            background: $white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner-text {
+  margin-top: 5rem;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+.card-rounded {
+  border-radius: 10px;
+}
+
+.flat_btn {
+  box-shadow: none;
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.btn,
+.btn-flat {
+  text-transform: none;
+}
+
+.btn-flat {
+  padding: 0;
+}
+
+.banner-btn {
+  background-color: $orange !important;
+  color: $white !important;
+}
+
+.card-panel {
+  .avatar {
+    width: 100px;
+    height: auto;
+  }
+  h5 {
+    margin: 0;
+  }
+}
+.card {
+  box-shadow: none;
+
+  &:hover {
+    -webkit-box-shadow: -1px 3px 10px -1px rgb(197, 197, 197);
+    -moz-box-shadow: -1px 3px 10px -1px rgb(197, 197, 197);
+    box-shadow: 1px 3px 10px -1px rgb(197, 197, 197);
+
+    h5 {
+      color: $orange;
+    }
+  }
+  .card-img {
+    width: 150px;
+    height: auto;
+  }
+}
+
+.auth-card {
+  border: 1px solid #d8d8d8;
+}
+
+.input-field input:focus + label {
+  color: $orange !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+  border-bottom: 1px solid $orange !important;
+  box-shadow: 0 1px 0 0 $orange !important;
+}
+
+.input-field textarea:focus + label {
+  color: $orange !important;
+}
+
+/* invalid color */
+.input-field input[type="text"].invalid {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: $orange !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .brand-logo {
+    display: none;
+  }
+}
