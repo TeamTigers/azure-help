@@ -97,6 +97,7 @@ header nav ul li a:hover::after {
 
 .card {
   box-shadow: none;
+  overflow: hidden;
 }
 .card:hover {
   -webkit-box-shadow: -1px 3px 10px -1px #c5c5c5;
@@ -138,6 +139,17 @@ header nav ul li a:hover::after {
 /* icon prefix focus color */
 .input-field .prefix.active {
   color: #c36403 !important;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fcd5ae;
+  right: -11%;
+  top: -18%;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 600px) {
