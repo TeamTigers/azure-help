@@ -13,7 +13,7 @@
     <header>
       <nav>
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo">Logo</a>
+          <a href="index.html" class="brand-logo">Help</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
           <ul class="right hide-on-med-and-down">
@@ -26,19 +26,17 @@
                 </div>
               </form>
             </li>
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
+            <li><a href="patient.html">Doctor List</a></li>
+            <li><a href="p_appointment.html">Appointments</a></li>
+            <li><a href="index.html">Sign out</a></li>
           </ul>
         </div>
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="patient.html">Doctor List</a></li>
+        <li><a href="p_appointment.html">Appointments</a></li>
+        <li><a href="index.html">Sign out</a></li>
       </ul>
     </header>
 
@@ -49,24 +47,60 @@
         </div>
         <br /><br />
         <div class="row">
-          <div class="col s12 m6 l6">
-            <div class="card card-rounded auth-card">
-              <div class="card-content white-text">
-                <div class="row">
-                  <div class="col s7">
-                    <span class="card-title">Salma Khatun</span>
-                    <p>MBBS (NMC), FRCS (UK)</p>
-                    <p>Senior Consultant</p>
-                    <p>Medicine Specialist</p>
-                  </div>
-                  <div class="col s5">
-                    <h6>Time</h6>
-                    <p>23 Sep, 2020 - 10:30 AM</p>
+          <div class="col s12 center">
+            <ul class="tabs">
+              <li class="tab"><a class="active" href="#upcoming">Upcoming</a></li>
+              <li class="tab"><a href="#completed">Completed</a></li>
+            </ul>
+          </div>
+          <div id="upcoming">
+            <div class="col s12 m6 l6">
+              <div class="card card-rounded auth-card">
+                <div class="card-content white-text">
+                  <div class="row">
+                    <div class="col s7">
+                      <span class="card-title">Salma Khatun</span>
+                      <p>MBBS (NMC), FRCS (UK)</p>
+                      <p>Senior Consultant</p>
+                      <p>Medicine Specialist</p>
+                    </div>
+                    <div class="col s5">
+                      <h6>Time</h6>
+                      <p>23 Sep, 2020 - 10:30 AM</p>
+                    </div>
                   </div>
                 </div>
+                <div class="card-action center">
+                  <a href="#" class="red-text text-darken-1 btn-flat btn-rounded">Cancel appointment</a>
+                </div>
               </div>
-              <div class="card-action center">
-                <a href="#" class="red-text text-darken-1 btn-flat btn-rounded">Cancel appointment</a>
+            </div>
+          </div>
+
+          <div id="completed">
+            <div class="col s12 m6 l6">
+              <div class="card card-rounded auth-card">
+                <div class="card-content white-text">
+                  <div class="row">
+                    <div class="col s7">
+                      <span class="card-title">Najia Begum</span>
+                      <p>MBBS (NMC), FRCS (UK)</p>
+                      <p>Senior Consultant</p>
+                      <p>Child and health specialist</p>
+                    </div>
+                    <div class="col s5">
+                      <h6>Time</h6>
+                      <p>23 Sep, 2020 - 10:30 AM</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-action">
+                  <a
+                    href="#prescription_modal"
+                    class="blue-text text-darken-4 btn-flat btn-rounded prescription modal-trigger"
+                    >Prescription</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -74,21 +108,45 @@
       </div>
 
       <!-- MODALS -->
-      <div id="anik" class="modal modal-fixed-footer">
+      <div id="prescription_modal" class="modal modal-fixed-footer card-rounded">
         <div class="modal-content">
-          <h5 class="center">Get an appointment with the doctor</h5>
-          <div class="row">
-            <div class="col s12">
-              <h6 for="date" class="black-text">Select date</h6>
-              <input type="text" class="datepicker" />
-              <h6 for="date" class="">Select time</h6>
-              <input type="text" class="timepicker" />
-            </div>
-          </div>
+          <h4>Dr. Najia Begum</h4>
+          <p><b>Patient name:</b> Korima Khatun</p>
+          <p><b>Age:</b> 28</p>
+          <p><b>Sex: </b>Female</p>
+          <table class="centered">
+            <thead>
+              <tr>
+                <th>Medicine name</th>
+                <th>When to take</th>
+                <th>Continue for (Days)</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Metfo</td>
+                <td>1 - 0 - 1</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Hicsa</td>
+                <td>0 - 0 - 1</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Napa</td>
+                <td>1 - 1 - 1</td>
+                <td>7</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
         <div class="modal-footer">
           <a href="#!" class="modal-close waves-effect waves-orange orange-text text-darken-4 btn-flat">Cancel</a>
-          <a href="#!" class="modal-close waves-effect waves-blue blue-text text-darken-4 btn-flat">Submit</a>
+          <a href="#!" class="modal-close waves-effect waves-blue blue-text text-darken-4 btn-flat">
+            <i class="material-icons left">print</i> Print</a
+          >
         </div>
       </div>
     </main>

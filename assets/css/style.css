@@ -24,6 +24,19 @@ span {
   color: #3e4444;
 }
 
+.bg0 {
+  height: 70vh;
+}
+
+.bg {
+  height: 60vh;
+}
+.bg .secondary-img {
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 4px 24px 10px rgba(145, 145, 145, 0.59);
+  box-shadow: 1px 4px 24px 10px rgba(145, 145, 145, 0.59);
+}
+
 header nav {
   background: white;
   padding: 0 1rem;
@@ -82,7 +95,7 @@ header nav ul li a:hover::after {
   padding: 0;
 }
 
-.modal {
+.appointment_modal {
   border-radius: 15px;
   width: 75% !important;
   height: 40% !important;
@@ -122,6 +135,9 @@ header nav ul li a:hover::after {
   font-weight: bold;
   background-color: #e5383517;
 }
+.card .card-action .prescription {
+  background-color: rgba(13, 92, 240, 0.151);
+}
 
 .auth-card {
   border: 1px solid #d8d8d8;
@@ -157,15 +173,44 @@ header nav ul li a:hover::after {
   height: 100px;
   border-radius: 50%;
   position: absolute;
-  background: #fff0e1;
+  background: #fad2aa;
   right: -11%;
   top: -18%;
   overflow: hidden;
 }
 
+.tabs {
+  margin-bottom: 1rem;
+}
+.tabs .tab a {
+  color: #e4ad46;
+}
+
+/*Black color to the text*/
+.tabs .tab a:hover {
+  background-color: white;
+  color: #c36403;
+}
+
+/*Text color on hover*/
+.tabs .tab a.active {
+  background-color: white !important;
+  color: #c36403;
+}
+
+/*Background and text color when a tab is active*/
+.tabs .indicator {
+  background-color: #c36403;
+}
+
+/*Color of underline*/
 @media only screen and (max-width: 600px) {
   .brand-logo {
     display: none;
+  }
+
+  .flat_btn {
+    width: 100%;
   }
 }
 
