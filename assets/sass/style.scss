@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 
 $orange: #c36403;
-$light_orange: #fcd5ae;
+$light_orange: #fff0e1;
 $deep_black: #040404;
 $light_black: #3e4444;
 $white: rgb(255, 255, 255);
@@ -97,8 +97,13 @@ header {
   text-transform: none;
 }
 
-.btn-flat {
+.pd-0 {
   padding: 0;
+}
+.modal {
+  border-radius: 15px;
+  width: 75% !important ;
+  height: 55% !important ;
 }
 
 .banner-btn {

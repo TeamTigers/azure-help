@@ -78,8 +78,14 @@ header nav ul li a:hover::after {
   text-transform: none;
 }
 
-.btn-flat {
+.pd-0 {
   padding: 0;
+}
+
+.modal {
+  border-radius: 15px;
+  width: 75% !important;
+  height: 55% !important;
 }
 
 .banner-btn {
@@ -146,7 +152,7 @@ header nav ul li a:hover::after {
   height: 100px;
   border-radius: 50%;
   position: absolute;
-  background: #fcd5ae;
+  background: #fff0e1;
   right: -11%;
   top: -18%;
   overflow: hidden;
