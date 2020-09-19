@@ -85,7 +85,7 @@ header nav ul li a:hover::after {
 .modal {
   border-radius: 15px;
   width: 75% !important;
-  height: 55% !important;
+  height: 40% !important;
 }
 
 .banner-btn {
@@ -116,6 +116,11 @@ header nav ul li a:hover::after {
 .card .card-img {
   width: 150px;
   height: auto;
+}
+.card .card-action a {
+  text-transform: none !important;
+  font-weight: bold;
+  background-color: #e5383517;
 }
 
 .auth-card {

@@ -103,7 +103,7 @@ header {
 .modal {
   border-radius: 15px;
   width: 75% !important ;
-  height: 55% !important ;
+  height: 40% !important ;
 }
 
 .banner-btn {
@@ -136,6 +136,14 @@ header {
   .card-img {
     width: 150px;
     height: auto;
+  }
+
+  .card-action {
+    a {
+      text-transform: none !important;
+      font-weight: bold;
+      background-color: #e5383517;
+    }
   }
 }
 
