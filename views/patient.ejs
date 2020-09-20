@@ -337,7 +337,7 @@
           confirmButtonText: "Yes, take it",
         }).then((result) => {
           if (result.isConfirmed) {
-            Swal.fire("Congratulations!", "Your appointment is booked.", "success");
+            window.location.href = "/p_appointment";
           }
         });
       }
