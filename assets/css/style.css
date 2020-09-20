@@ -103,8 +103,6 @@ header nav ul li a:hover::after {
 
 .modal {
   border-radius: 15px;
-  width: 70% !important;
-  height: 70% !important;
 }
 
 .mr1 {
