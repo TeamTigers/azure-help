@@ -31,12 +31,12 @@ span {
 }
 
 .bg0 {
-  height: 70vh;
+  height: 90vh;
 }
 
 .bg {
   // background: url(../img/bg.svg);
-  height: 60vh;
+  height: 90vh;
 
   .secondary-img {
     border-radius: 15px;
@@ -56,6 +56,7 @@ header {
     }
     .brand-logo {
       color: $orange;
+      font-weight: 600;
     }
     ul {
       li {

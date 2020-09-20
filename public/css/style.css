@@ -25,11 +25,11 @@ span {
 }
 
 .bg0 {
-  height: 70vh;
+  height: 90vh;
 }
 
 .bg {
-  height: 60vh;
+  height: 90vh;
 }
 .bg .secondary-img {
   border-radius: 15px;
@@ -46,6 +46,7 @@ header nav a {
 }
 header nav .brand-logo {
   color: #c36403;
+  font-weight: 600;
 }
 header nav ul li a {
   text-decoration: none;
@@ -143,8 +144,8 @@ header nav ul li a:hover::after {
   font-weight: bold;
   background-color: #e5383517;
 }
-.card .card-action .prescription {
-  background-color: rgba(13, 92, 240, 0.151);
+.card .card-action a .prescription-pdf {
+  background-color: rgba(13, 92, 240, 0.151) !important;
 }
 
 .auth-card {
