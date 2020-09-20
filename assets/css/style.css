@@ -91,14 +91,24 @@ header nav ul li a:hover::after {
   text-transform: none;
 }
 
+.prescription {
+  width: 100%;
+  background-color: #c36403 !important;
+  color: white !important;
+}
+
 .pd-0 {
   padding: 0;
 }
 
-.appointment_modal {
+.modal {
   border-radius: 15px;
-  width: 75% !important;
-  height: 40% !important;
+  width: 70% !important;
+  height: 70% !important;
+}
+
+.mr1 {
+  margin: 1rem;
 }
 
 .banner-btn {
@@ -107,7 +117,7 @@ header nav ul li a:hover::after {
 }
 
 .card-panel .avatar {
-  width: 100px;
+  width: 70px !important;
   height: auto;
 }
 .card-panel h5 {
@@ -168,7 +178,7 @@ header nav ul li a:hover::after {
   color: #c36403 !important;
 }
 
-.circle {
+.blob {
   width: 100px;
   height: 100px;
   border-radius: 50%;
