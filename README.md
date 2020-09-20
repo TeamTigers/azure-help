@@ -1,37 +1,5 @@
-## Welcome to GitHub Pages
+## HFAP 
 
-You can use the [editor on GitHub](https://github.com/TeamTigers/azure-help/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+**HFAP** stands for Help the Flood Affected People. Every year numerous number of people are affected by floods from rivers and sea. A research has shown that around 147 million people will be affected by flood by the end of the decade. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TeamTigers/azure-help/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Our goal is to help the affected people to the service from doctor and get required information from doctor in the critical time. For that purpose, we created an environment where affected people can get service from doctor by GSM or any android and pc. 
