@@ -162,10 +162,10 @@ header {
       text-transform: none !important;
       font-weight: bold;
       background-color: #e5383517;
-    }
 
-    .prescription {
-      background-color: rgba(13, 92, 240, 0.151);
+      .prescription-pdf {
+        background-color: rgba(13, 92, 240, 0.151) !important;
+      }
     }
   }
 }
