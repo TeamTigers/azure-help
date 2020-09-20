@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -32,7 +32,7 @@
       <div class="container">
         <div class="row">
           <div class="center-align">
-            <h4>Sign in to get your service</h4>
+            <h4>Create an account</h4>
           </div>
           <div class="col s12 m12 l6 offset-l3">
             <div class="card card-rounded auth-card">
@@ -41,18 +41,36 @@
                   <form class="col s12">
                     <div class="row">
                       <div class="input-field col s12">
-                        <input id="phone_number" type="number" class="validate" />
+                        <input id="phone_number" type="number" class="validate" pattern="" />
                         <label for="phone_number">Phone number</label>
                       </div>
                       <div class="input-field col s12">
                         <input id="password" type="password" class="validate" />
                         <label for="password">Password</label>
                       </div>
+                      <div class="input-field col s12">
+                        <input id="confirmPassword" type="Password" class="validate" />
+                        <label for="confirmPassword">Confirm Password</label>
+                      </div>
+                      <div class="col s12">
+                        <p>
+                          <label>
+                            <input class="with-gap" name="group1" type="radio" checked />
+                            <span>Patient</span>
+                          </label>
+                        </p>
+                        <p>
+                          <label>
+                            <input class="with-gap" name="group1" type="radio" />
+                            <span>Doctor</span>
+                          </label>
+                        </p>
+                      </div>
                     </div>
-                    <a href="signup.html" class="btn-flat orange-text text-darken-4 left pd-0">Create account</a>
-                    <a href="patient.html" class="waves-effect waves-light btn banner-btn btn-rounded right flat_btn"
-                      >Login</a
+                    <a href="signin.html" class="btn-flat orange-text text-darken-4 left pd-0"
+                      >Already have an account</a
                     >
+                    <a class="waves-effect waves-light btn banner-btn btn-rounded right flat_btn">Register</a>
                   </form>
                 </div>
               </div>
@@ -71,6 +89,6 @@
     ></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
